@@ -32,7 +32,7 @@ public class MP3Recorder {
 	/**
 	 *  Encoded bit rate. MP3 file will be encoded with bit rate 32kbps 
 	 */ 
-	private static final int DEFAULT_LAME_MP3_BIT_RATE = 32;
+	private static final int DEFAULT_LAME_MP3_BIT_RATE = 16;
 	
 	//==================================================================
 	

@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "1.0.4"
+version = "1.0.5"
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -28,9 +28,9 @@ dependencies {
     compile 'com.android.support:support-v4:23.1.1'
 }
 
-def siteUrl = 'https://github.com/GavinCT/AndroidMP3Recorder'      // 项目的主页
-def gitUrl = 'https://github.com/GavinCT/AndroidMP3Recorder.git'   // Git仓库的url
-group = "com.czt.mp3recorder"                                   // Maven Group ID for the artifact，一般填你唯一的包名
+def siteUrl = 'https://github.com/eliyetyang/AndroidMP3Recorder'      // 项目的主页
+def gitUrl = 'https://github.com/eliyetyang/AndroidMP3Recorder.git'   // Git仓库的url
+group = "com.czt.mp3recorder.eliyet"                                   // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -49,9 +49,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'GavinCT'		//填写的一些基本信息
-                        name 'chentong'
-                        email 'chentong.think@gmail.com'
+                        id 'EliyetYang'		//填写的一些基本信息
+                        name 'YangEnHe'
+                        email 'eliyetyang@gmail.com'
                     }
                 }
                 scm {
@@ -88,7 +88,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "AndroidMP3RecorderLibrary"	//发布到JCenter上的项目名字
+        name = "AndroidMP3RecorderLibrary_Eliyet"	//发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
